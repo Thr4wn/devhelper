@@ -9,8 +9,6 @@
 
 include_recipe 'jenkins::master'
 
-normal['jenkins']['master']['jvm_options'] = '-Djenkins.install.runSetupWizard=false'
-
 jenkins_plugin 'cloudbees-folder'
 jenkins_plugin 'build-timeout'
 jenkins_plugin 'credentials-binding'
